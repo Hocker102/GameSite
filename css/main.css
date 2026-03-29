@@ -39,7 +39,7 @@ p{
     line-height: 200%;
 }
 
-header.logo{
+header.logo, footer .blocks .logo{
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 800;
@@ -95,14 +95,15 @@ header nav ul li:not(.active):not(.btn) a:hover {
     padding-bottom: 12.5px;
 }
 
-header nav ul li.btn a{
+header nav ul li.btn a, .email .block button{
+    font-family: 'Poppins',sans-serif;
     background-color: #FA9021;
     padding: 9px 17px;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: all 300ms ease;
 }
 
-header nav ul li.btn a:hover{
+header nav ul li.btn a:hover, .email .block button:hover{
     background-color: #b1580f;
 }
 
@@ -311,4 +312,108 @@ header nav ul li.btn a:hover{
     width: 60px;
     text-align: center;
     margin: auto;
+}
+
+.email{
+    padding-bottom: 120px;
+}
+
+.email h3{
+    margin-top: 60px;
+    width: 209px;
+    font-size: 30px;
+}
+
+.email p{
+    width: 545px;
+}
+
+.email .block{
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.email .block p{
+    width: 500px;
+}
+
+.email .block input{
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    width:280px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    padding: 15px 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    position: relative;
+    left: 124px;
+    z-index: 0;
+    padding-right: 150px;
+}
+
+.email .block input::placeholder{
+    color:#898989;
+}
+
+.email .block button{
+    background: #DC7000;
+    cursor: pointer;
+    border:0;
+    padding: 13px 22px 11px 30px;
+    position: relative;
+    z-index: 1;
+    color:#fff;
+}
+
+/*footer*/
+
+footer{
+    background:#010101;
+    padding: 50px 0;
+}
+
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p{
+    width: 372px;
+    padding: 15px 0;
+}
+
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul li{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer p{
+    text-align: center;
 }
