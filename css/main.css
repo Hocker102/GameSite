@@ -39,9 +39,9 @@ p{
     line-height: 200%;
 }
 
-header.logo, footer .blocks .logo{
+header .logo, footer .blocks .logo{
     text-transform: uppercase;
-    font-size: 29px;
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -288,7 +288,7 @@ header nav ul li.btn a:hover, .email .block button:hover{
 .projects{
     padding: 100px 0;
     width: 1170px;
-    transform: scale(1.2);
+    transform: scale(1.39);
 }
 
 .projects h3{
@@ -414,6 +414,18 @@ footer hr{
     background: #ccc;
 }
 
-footer p{
+footer > p{
     text-align: center;
+}
+
+.crumbs{
+    margin-top: 50px;
+}
+
+.crumb-home{
+    color:#ccc;
+}
+
+.crumb-separator, .crumb-current{
+    color:#FA9021;
 }
